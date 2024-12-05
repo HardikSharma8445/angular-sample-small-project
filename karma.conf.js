@@ -24,12 +24,18 @@ module.exports = function (config) {
                 { type: 'text-summary' }
             ]
         },
+        customLaunchers: {
+            ChromeHeadlessNoSandbox: {
+                base: 'ChromeHeadless',
+                flags: ['--no-sandbox'] // Add the no-sandbox flag
+            }
+        },
         reporters: ['progress', 'kjhtml'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: true,
-        browsers: ['ChromeHeadless'], // Use headless Chrome
+        browsers: ['ChromeHeadlessNoSandbox'], // Use the custom launcher
         singleRun: true,
         restartOnFileChange: true
     });
