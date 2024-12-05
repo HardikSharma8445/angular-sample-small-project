@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Angular 18.1 Sample Project
 
 <p align="center">
@@ -50,3 +51,6 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
  **Angular 18.1**, **open-source**, **modular architecture**, **template**,
+=======
+# angular-sample-small-project
+>>>>>>> 8da2966401c78e2282a1ea87a197543e7fa79651
